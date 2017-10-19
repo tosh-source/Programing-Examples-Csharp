@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Common Tags</title>
+    <link href="CSSforHTML-common-elements.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <a href="http://www.telerik.com/" title="Telerik">Link to Telerik Web site</a>
+    <img src="images/seb-ninja.png" width="50" alt="logo" />
+    This text is <em>emphasized.</em>
+    <br />new line<br />
+    This one is <strong>more emphasized (aka Strong bold).</strong> <br /><br />
+    <fieldset>
+        This is <pre>Preformated   text</pre>
+    </fieldset>
+
+    <h1>Heading 1</h1>
+    <h2>Sub heading 2</h2>
+    <h3>Sub heading 3</h3>
+    <h4>Sub heading 4</h4>
+    <h5>Sub heading 5</h5>
+    <h6>Sub heading 6</h6>
+    <p>This is my first paragraph</p>
+    <p>This is my second paragraph</p>
+    <div style="background: skyblue;">This is a div</div>
+    <ol type="1">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Grapefruit</li>
+    </ol>
+    <ul type="disk">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Grapefruit</li>
+    </ul>
+    <dl>
+        <dt>HTML</dt>
+        <dd>A markup language</dd>
+        <dt>CSS</dt>
+        <dd>Language used to</dd>
+    </dl>
+    <fieldset>
+        <legend>Some HTML demos</legend>
+        <div>
+            <form method="get" action="http://www.abv.bg/">
+                <input type="hidden" name="Account" value="Some hidden text from users" />
+                <input type="submit" value="Go to ABV" /> <br />
+            </form>
+        </div>
+
+        <div>
+            <label for="123">Select..</label>
+            <input type="checkbox" name="fruit" id="123" value="apple" />
+            <label for="1234">Select..2</label>
+            <input type="checkbox" name="fruit" id="1234" value="apple" />
+        </div>
+
+        <div>
+            <label for="female-rd-button">Female</label>
+            <input type="radio" id="female-rd-button" name="gender" />
+            <label for="male-rd-button">Male</label>
+            <input type="radio" id="male-rd-button" name="gender" />
+            <label for="other-rd-button">Other</label>
+            <input type="radio" id="other-rd-button" name="gender" />
+        </div>
+
+        <div>
+            <select name="Country">
+                <option value="1">EU</option>
+                <option value="2">Greece</option>
+                <option value="3" selected="selected">Bulgaria</option>
+                <option value="4">Armenia</option>
+                <option value="5">Germany</option>
+                <option value="6">France</option>
+            </select> <br />
+            <select>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Child</option>
+                <option selected="selected" value="4">Father</option>
+                <option value="5">Mother</option>
+            </select> <br />
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search-name" placeholder="Enter your search words" autofocus="autofocus" /> <!--Функцията(атрибутът) "autofocus" дава възможност, още при първото зареждане на страницата, без допълнителна намеса, потребителя да започне да въвежда от клавиатурата върху предварително избрана (с помоща на "autofocus") за целта текстова лента, лента за търсене и т.н.-->
+            (with <strong>autofocus</strong> attributes)
+        </div>
+
+        <div>
+            <label>
+                <span>Name:</span>
+                <input type="text" name="name" placeholder="Enter your name.." /> <!--Когато "<inpunt/>" е поставен вътре в "<label>" (<label>-<input/>-</label>) може да се кликне върху името (на <lebael>-а) или самата "лента за въвеждане", и двете ще реагират еднакво и ще поставят курсор за въвеждане от клавиатурата/потребителя.-->
+            </label> <br />
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>HTML(5) Buttons</legend>
+        <form method="get" action="http://www.data.bg">
+            <input type="button" class="htmlButtons" value="Button (do nothing without JS)" />
+            <input type="submit" class="htmlButtons" value="Submit" />
+            <input type="image" class="htmlButtons" src="images/submitbuton.png" alt="Submit button as image" width="70" />
+            <input type="reset" class="htmlButtons" value="Reset" />
+            <hr /> The same buttons with new HTML5 tag: "buttons" <br />
+            <button type="button" class="htmlButtons">Button (do nothing without JS)</button>
+            <button type="submit" class="htmlButtons">Submit</button>
+            <button type="reset" class="htmlButtons">Reset</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Date</legend>
+        <input type="color" /> <!--тази функция не работи в Internet Explorer-->
+        <input type="date" />  <!--тази функция засега работи само в Google Chrome-->
+        <input type="file" />
+    </fieldset>
+
+    <form>
+        <fieldset>
+            <legend>Required area</legend>
+            <label>
+                <span>Required text:</span>
+                <input type="text" name="name" required="required" id="12" placeholder="This is required text area" />
+                <input type="submit" name="name" />
+            </label>
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>Text fields selection order.. (by pressing TAB key)</legend>
+        <fieldset>
+            <legend>Text fields, by neutral selection order.. (tabindex="0")</legend>
+            <form method="get">
+                <input type="text" tabindex="0" placeholder="Some text field, press TAB" />
+                <input type="text" tabindex="0" placeholder="Some text field, press TAB" />
+                <input type="text" tabindex="0" placeholder="Some text field, press TAB" />
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Text fields, by predefined selection order.. (tabindex="2, 3, 10,..")</legend>
+            <form>
+                <input type="text" tabindex="3" placeholder="Some text field, press TAB" /> <br />
+                <input type="text" tabindex="2" placeholder="Some text field, press TAB" /> <br />
+                <input type="text" tabindex="1" placeholder="Some text field, press TAB" /> <br />
+                <input type="text" tabindex="0" placeholder="Some text field, press TAB" />
+            </form>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Multi-line text fields (Textarea)</legend>
+        <form>
+            <textarea name="Comments">This is DEFAULT multi-line text field</textarea> <br />
+            <textarea cols="25" rows="4">This is another multi-line text field</textarea>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Inline frames (iframe) example</legend>
+        <div>
+            <iframe name="iframe_example" width="600" height="300" src="http://www.telerikacademy.com" frameborder="1" scrolling="yes"></iframe>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>HTML5 Form Validation pattern example:</legend>
+        <form method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="telInput">Telephone Number:</label>
+                <input id="telInput"
+                       type="tel"
+                       required="required"
+                       pattern="\+[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}\-[0-9]{2}"
+                       placeholder="+359-888-88-88-88" /> <br />
+                <label for="urlInput">Your Web Site</label>
+                <input id="urlInput"
+                       type="url"
+                       required="required"
+                       placeholder="http://yourwebsite.com" /> <br />
+                <label for="emailInput">Your email:</label>
+                <input id="emailInput"
+                       type="email"
+                       required="required"
+                       pattern="[a-zA-Z0-9_]{3,}@[a-zA-Z0-9_]{3,}.[a-zA-Z0-9_]{2,4}"
+                       placeholder="simple@email.com" /> <br />
+                <input type="submit" value="submit" />
+            </fieldset>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>HTML5 Audio & Video implementation</legend>
+        <audio controls>
+            <source src="audiotest.ogg" type="audio/ogg">         <!--Аудио е на булев принцип. Ако първия ред с избрания файл не се поддържа (нарочно НЕ съм поставил "ogg" файл за да симулирам липсата на подръъжка), тогава следва да се изпълни втория ред с посочения втори вид файл (в случая "mp3/mpeg"), ако и той не се поддържа, тогава погледни третия ред. Като практика е добре последния ред да е с текст в който да се посочи липсата на поддръжка на HTML5 от браузъра. -->
+            <source src="audio/audiotest.mp3" type="audio/mpeg">
+            Your browser does not support HTML5 audio
+        </audio>
+        <video width="480" controls>
+            <source src="video/videotest.ogg" type="video/odd">   <!--Видео тага също е на булев принцип. Ако първия ред с избрания файл не се поддържа (нарочно НЕ съм поставил "ogg" файл за да симулирам липсата на подръъжка), тогава следва да се изпълни втория ред с посочения втори вид файл (в случая "mp4"), ако и той не се поддържа, тогава погледни третия ред. Като практика е добре последния ред да е с текст в който да се посочи липсата на поддръжка на HTML5 от браузъра. -->
+            <source src="video/videotest.mp4" type="video/mp4">
+            <br />
+            Your browser does not support HTML5 video
+        </video>
+    </fieldset>
+
+    <fieldset>
+        <legend>Progress & Meter tags in HTML5</legend>
+        <fieldset>
+            <legend>Progress tag</legend>
+            Downloading progress:
+            <progress value="22" max="100"></progress>
+            <p><strong>Note:</strong> The progress tag is not supported in Internet Explorer 9 and earlier versions.</p>
+        </fieldset>
+        <fieldset>
+            <legend>Meter tag</legend>
+            <p>Display a gauge:</p>
+            <meter value="4" min="0" max="10">4 out of 10</meter> <br />
+            <meter value="0.7">70%</meter>
+            <p><strong>Note:</strong> The meter tag is not supported in Internet Explorer or Safari 5 (and earlier versions)!!</p>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Output tag in HTML5</legend>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="50" />100+
+            <input type="number" id="b" value="50" />=
+            <output name="x" for="a b"></output>
+        </form>
+        <p><strong>Note:</strong> The "Output tag" is not supported in Internet Explorer.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sliders on HTML5</legend>
+        <form oninput="x.value=parseInt(ab.value)"> 10
+            <input id="ab" type="range" min="10" max="50" value="20" step="5" />50 =
+            <output name="x" for="ab"></output>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Spinbox on HTML5</legend>
+        <form>
+            <input type="number" min="0" max="40" value="15" step="5" />
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>HTML5 Table example + CSS</legend>
+        <!-- Тази таблица ще използва стилът от CSS-а описан по-горе (в <head> часта от документа). Забележка-Там където застъпва CSS, в клектките например, атрибутът бордер(описан тук, border="1") се пренебрегва. Изключение ще направи само клетките тип заглавия на таблицата, тъй като те започват с <th>, а в селектора е посочено само таговете: <td> и <td td>. -->
+        <table>
+            <colgroup>
+                <!--Тага <colgroup> описва как ще изглежда всяка една от нашите колони (това става посредством подтага <col/>).-->
+                <col width="50%" />
+                <col width="25%" />
+                <col width="25%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <!--Тага <tfoot> е прието да се поставя след <thead> и преди <tbody> от семантична гледна точка, но браузъра го визуализира коректно на последно място, за където и е предназначен.-->
+                <tr>
+                    <td>The sum of cell 1: </td>
+                    <td>The sum of cell 2:</td>
+                    <td>The sum of cell 3:</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Cell 1 (row1)</td>
+                    <td>Cell 2 (row1)</td>
+                    <td>
+                        <table border="1" cellspacing="3" cellpadding="3">
+                            <tr>
+                                <td>Nested Cell 1 (row1)</td>
+                                <td>Nested Cell 2 (row1)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cell 1 (row2)</td>
+                    <td></td>
+                    <td>Cell 3 (row2)</td>
+                </tr>
+                <tr>
+                    <td>Cell 1 (row3)</td>
+                    <td colspan="2">Cell 2 + Cell 3 (row3)</td>
+                </tr>
+                <tr>
+                    <td>Cell 1 (row4)</td>
+                    <td rowspan="2">Cell 2 (row4) + Cell 2 (row5)</td>
+                    <td>Cell 3 (row4)</td>
+                </tr>
+                <tr>
+                    <td>Cell 1 (row5)</td>
+                    <td>Cell 2 (row5)</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+</html>
