@@ -55,7 +55,7 @@ class String_PrintingOptions
             stringForReverse = normalString[i] + stringForReverse;  //just put new value(string in this case) BEFORE current value
         }
 
-        //IV.REmove elements from string with ".Remove()"
+        //IV.Remove elements from string with ".Remove()"
         string numbsAsString = "1234567890";
         ////////////////////////////////////////////////
         string neededNumbs = numbsAsString.Remove(2, 4); //.Remove(startIndex, counter);
@@ -94,6 +94,14 @@ class String_PrintingOptions
         }
         //////////////////////////////////////////////////////
 
+        //Parse multi-line text AS SINGLE line with verbatim string literal(цитиран низ) -> @"myString"
+        StringBuilder myText = new StringBuilder();
+        string tempInput = string.Empty;
+        for (int i = 0; i < 4; i++)
+        {
+            tempInput = Console.ReadLine();
+            myText.Append($@"{tempInput}");
+        }
     }
 }
 
