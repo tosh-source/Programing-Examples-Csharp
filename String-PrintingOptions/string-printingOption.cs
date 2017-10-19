@@ -84,6 +84,16 @@ class String_PrintingOptions
         string another = $"{name} is programmer guru";
         Console.WriteLine(another);
 
+        //Parse multi-line text in string array
+        short numberOfLines = short.Parse(Console.ReadLine());
+        //////////////////////////////////////////////////////
+        string[] inputData = new string[numberOfLines];
+        for (int line = 0; line < numberOfLines; line++)
+        {
+            inputData[line] = Console.ReadLine().ToString();
+        }
+        //////////////////////////////////////////////////////
+
     }
 }
 

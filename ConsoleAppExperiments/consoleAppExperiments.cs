@@ -28,7 +28,7 @@ class consoleAppExperiments
         //StringBuilder output = new StringBuilder();
         //output.Append(tmp[1].ToUpper());
         //Console.WriteLine(output);
-        string str = "some text here";
-        str.IndexOf()
+        string myStr = "hello \nis you here \nOk I've been there";
+        Console.WriteLine(myStr);
     }
 }
