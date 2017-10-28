@@ -19,6 +19,10 @@ class String_PrintingOptions
         string reverse = new string(temp);
         Console.WriteLine(reverse);
 
+        //Reverse string (simple way)
+        string simpleStrRev = new string(input.Reverse().ToArray());
+        Console.WriteLine(simpleStrRev);
+
         //Repeated Strings /Повтарящи се Символи
         //Синтаксиса, по-долу, отпечатва 15 звездички '*'. Тя може да бъде заменена с всичко др.,което преценим, намиращо се в уникодската таблица.
         string text = new string('*', 15);

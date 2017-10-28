@@ -7,7 +7,7 @@ class SubstringExample
     {
         //SubString method example
         Console.WriteLine("Please enter some integer, like: 123456789 and see the \".Substring\" method result..");
-        string allnumbs = (string)(Console.ReadLine());
+        string allnumbs = Console.ReadLine();
         ///////////////////////////////////////
         string num1 = allnumbs.Substring(0, 1);  //STRUCTURE--> stringName.Substring(int startIndex, int length)
         string num2 = allnumbs.Substring(1, 1);  

@@ -24,8 +24,5 @@ class consoleAppExperiments
 
         Console.WriteLine(string.Join(" ", listOfSB));
 
-
-
-
     }
 }
