@@ -12,22 +12,14 @@ class stringPrintingOption2
         string[] someText = { "This is " ,
                               "Fake Text " ,
                               "Markup Language" };
-        //////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////
         var inputFromConsole = new StringBuilder();
         for (int i = 0; i < someText.Length; i++)
         {
-            if (i < someText.Length - 1) //add NewLine to the end of every row(with text), except the last one
-            {
-                inputFromConsole.Append(someText[i] + Environment.NewLine);
-            }
-            else
-            {
-                inputFromConsole.Append(someText[i]);
-            }
+            inputFromConsole.Append(someText[i] + Environment.NewLine);
         }
-        //////////////////////////////////////////////////////////////////
-        Console.WriteLine(inputFromConsole);
-
+        ///////////////////////////////////////////////////////////////
+        Console.Write(inputFromConsole);
 
     }
 }
