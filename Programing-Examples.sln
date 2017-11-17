@@ -149,6 +149,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOf(string)-Array.Index
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String-PrintingOptions2", "String-PrintingOptions2\String-PrintingOptions2.csproj", "{0BC5182B-F54E-4A39-8C49-B899F9B03EE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel.For(ForEach)", "Parallel.For(ForEach)\Parallel.For(ForEach).csproj", "{AE25B7F8-2686-4848-9274-F0810E9904F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -439,6 +441,10 @@ Global
 		{0BC5182B-F54E-4A39-8C49-B899F9B03EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BC5182B-F54E-4A39-8C49-B899F9B03EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BC5182B-F54E-4A39-8C49-B899F9B03EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE25B7F8-2686-4848-9274-F0810E9904F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE25B7F8-2686-4848-9274-F0810E9904F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE25B7F8-2686-4848-9274-F0810E9904F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE25B7F8-2686-4848-9274-F0810E9904F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
