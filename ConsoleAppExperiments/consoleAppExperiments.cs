@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.IO;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 class consoleAppExperiments
 {

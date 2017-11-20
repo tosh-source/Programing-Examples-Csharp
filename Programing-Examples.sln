@@ -149,7 +149,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOf(string)-Array.Index
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String-PrintingOptions2", "String-PrintingOptions2\String-PrintingOptions2.csproj", "{0BC5182B-F54E-4A39-8C49-B899F9B03EE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel.For(ForEach)", "Parallel.For(ForEach)\Parallel.For(ForEach).csproj", "{AE25B7F8-2686-4848-9274-F0810E9904F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel.For(ForEach)-plusSpeedTest", "Parallel.For(ForEach)\Parallel.For(ForEach)-plusSpeedTest.csproj", "{AE25B7F8-2686-4848-9274-F0810E9904F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
