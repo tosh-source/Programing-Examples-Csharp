@@ -21,6 +21,22 @@ namespace StringBuilder__
 
             //II. List of StringBuilders (List<StringBuilder>)
             //see project: List(T)-examples II -> III.List of StringBuilders
+
+            //III.Add string elements in different position on "List of StringBuilders"
+            List<StringBuilder> listOfSB = new List<StringBuilder>();
+
+            listOfSB.Add(new StringBuilder("Me"));
+            listOfSB.Add(new StringBuilder("you"));
+            listOfSB.Add(new StringBuilder("Allibaba"));
+
+            listOfSB[1] = listOfSB[1].Append(" and"); //add element to the second StringBuilder
+            listOfSB[2] = listOfSB[2].Append("!");    //add element to the third StringBuilder
+
+            Console.WriteLine(string.Join(" ", listOfSB));
+
+            //IV.Convert "List of StringBuilders" to -> StringBuilder()
+            StringBuilder someSB = new StringBuilder(string.Join(" ", listOfSB));
+            Console.WriteLine(someSB);
         }
     }
 }
