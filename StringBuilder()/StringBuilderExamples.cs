@@ -19,24 +19,38 @@ namespace StringBuilder__
             /////////////////////////////////
             Console.WriteLine(test);   // output = Test
 
+
             //II. List of StringBuilders (List<StringBuilder>)
             //see project: List(T)-examples II -> III.List of StringBuilders
 
+
             //III.Add string elements in different position on "List of StringBuilders"
             List<StringBuilder> listOfSB = new List<StringBuilder>();
-
+            /////////////////////////////////////////////
             listOfSB.Add(new StringBuilder("Me"));
             listOfSB.Add(new StringBuilder("you"));
             listOfSB.Add(new StringBuilder("Allibaba"));
-
+            /////////////////////////////////////////////
             listOfSB[1] = listOfSB[1].Append(" and"); //add element to the second StringBuilder
             listOfSB[2] = listOfSB[2].Append("!");    //add element to the third StringBuilder
-
+            /////////////////////////////////////////////
             Console.WriteLine(string.Join(" ", listOfSB));
 
+            
             //IV.Convert "List of StringBuilders" to -> StringBuilder()
             StringBuilder someSB = new StringBuilder(string.Join(" ", listOfSB));
             Console.WriteLine(someSB);
+
+
+            //V.Use ToUpper(), ToLower"() and Reverse() in StringBuilder
+            var sb1 = new StringBuilder("my text HeRe");
+            var sb2 = new StringBuilder();
+            //////////////////////////////////////////////////////
+            sb2.Append(sb1.ToString(3, 4).ToUpper());
+            Console.WriteLine(sb2);
+            Console.WriteLine(sb1.ToString(8, 4).ToLower()); //print directly
+            Console.WriteLine(sb1.ToString().Reverse().ToArray());
+            //////////////////////////////////////////////////////
         }
     }
 }
