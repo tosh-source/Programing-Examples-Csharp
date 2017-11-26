@@ -12,8 +12,6 @@ class consoleAppExperiments
 {
     static void Main()
     {
-        //var input = new StringReader("test me");
-        //Console.SetIn(input);
 
 
     }

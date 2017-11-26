@@ -42,14 +42,15 @@ namespace StringBuilder__
             Console.WriteLine(someSB);
 
 
-            //V.Use ToUpper(), ToLower"() and Reverse() in StringBuilder
+            //V.Use ToUpper(), ToLower"(), Reverse() and Replace() in StringBuilder
             var sb1 = new StringBuilder("my text HeRe");
             var sb2 = new StringBuilder();
             //////////////////////////////////////////////////////
             sb2.Append(sb1.ToString(3, 4).ToUpper());
             Console.WriteLine(sb2);
-            Console.WriteLine(sb1.ToString(8, 4).ToLower()); //print directly
+            Console.WriteLine(sb1.ToString(8, 4).ToLower());        //print directly
             Console.WriteLine(sb1.ToString().Reverse().ToArray());
+            Console.WriteLine(sb1.Replace("text", "", 3, 4));       //<-Replace(string oldValue, string newValue, int startIndex, int count)
             //////////////////////////////////////////////////////
         }
     }

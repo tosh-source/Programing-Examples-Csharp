@@ -153,6 +153,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel.For(ForEach)-plusS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder.IndexOf(byTodor)", "StringBuilder.IndexOf(byTodor)\StringBuilder.IndexOf(byTodor).csproj", "{87D54B80-7DBC-45AE-9421-912E4CE4BDC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder.LastIndexOf(byTodor)", "StringBuilder.LastIndexOf(byTodor)\StringBuilder.LastIndexOf(byTodor).csproj", "{21957FF0-D039-4145-8835-54FF9699215C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -451,6 +453,10 @@ Global
 		{87D54B80-7DBC-45AE-9421-912E4CE4BDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87D54B80-7DBC-45AE-9421-912E4CE4BDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87D54B80-7DBC-45AE-9421-912E4CE4BDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21957FF0-D039-4145-8835-54FF9699215C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21957FF0-D039-4145-8835-54FF9699215C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21957FF0-D039-4145-8835-54FF9699215C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21957FF0-D039-4145-8835-54FF9699215C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
