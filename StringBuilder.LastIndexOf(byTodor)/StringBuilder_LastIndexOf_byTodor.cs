@@ -10,36 +10,43 @@ class StringBuilder_LastIndexOf_byTodor
     static void Main(string[] args)
     {
         var text = new StringBuilder("some text");
-        int myIndexResult = SBLastIndexOf(text, "m");
+        int myIndexResult = SBLastIndexOf(text, "me");
 
         Console.WriteLine($"The result of \"LastIndexOf\" method is: {myIndexResult}");
     }
 
-    private static int SBLastIndexOf(StringBuilder text, string valueToSearch)
+    private static int SBLastIndexOf(StringBuilder text, string valueToSearch, int? startIndex = null)
     {
-        char firstChar = valueToSearch[0];
+        char firstChar = valueToSearch[valueToSearch.Length - 1]; //take the (last)first element
         int indexToReturn = -1;
         bool continueOrNot = true;
-        int alreadyChecked = text.Length;
+        int currentCheckedIndex = text.Length-1;
 
+        //check default value of startIndex
+        if (startIndex == null) startIndex = text.Length - 1;
+
+        //Calculations
         //1.Start searching
-        for (int startIndex = text.Length - 1; startIndex >= 0; startIndex--)
+        for (int textIndex = (int)startIndex; textIndex >= 0; textIndex--)
         {
-            if (text[startIndex] == firstChar) //if there is matching
+            if (text[textIndex] == firstChar)  //if there is matching
             {
                 //2.Compare(char by char) the value with the text from current position.
-                for (int valueIndex = 0; valueIndex < valueToSearch.Length; valueIndex++)
+                for (int valueIndex = valueToSearch.Length - 1; valueIndex >= 0; valueIndex--)
                 {
-                    if (valueIndex == 0) indexToReturn = startIndex - valueIndex;
-                    alreadyChecked = startIndex - valueIndex;
+                    if (valueIndex == valueToSearch.Length - 1)
+                    {
+                        indexToReturn = textIndex - valueIndex;
+                    }
+                    currentCheckedIndex = textIndex - (valueToSearch.Length - 1 - valueIndex);
 
-                    if ((startIndex - valueIndex) < 0)  //check for "OverFlow Exception" and stop, because no chance for possible matches
+                    if ((textIndex - valueIndex) < 0)  //check for "OverFlow Exception" and stop, because no chance for possible matches
                     {
                         indexToReturn = -1;
                         continueOrNot = false;
                         break;
                     }
-                    else if (text[startIndex - valueIndex] != valueToSearch[valueIndex])  //if all chars of "valueToSearch" not matched, break and return index -1
+                    else if (text[currentCheckedIndex] != valueToSearch[valueIndex])  //if all chars of "valueToSearch" not matched, break and return index -1
                     {
                         indexToReturn = -1;
                         break;
@@ -47,7 +54,7 @@ class StringBuilder_LastIndexOf_byTodor
                 }
             }
 
-            if (alreadyChecked < startIndex) startIndex = alreadyChecked;
+            if (currentCheckedIndex < textIndex) textIndex = currentCheckedIndex;
 
             if (continueOrNot == false || indexToReturn != -1) break;
         }

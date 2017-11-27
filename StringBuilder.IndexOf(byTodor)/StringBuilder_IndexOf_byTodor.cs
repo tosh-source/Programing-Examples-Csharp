@@ -11,31 +11,35 @@ class StringBuilder_IndexOf_byTodor
         Console.WriteLine($"The result is: {myIndexResult}");
     }
 
-    private static int SBIndexOf(StringBuilder text, string valueToSearch)
+    private static int SBIndexOf(StringBuilder text, string valueToSearch, int? startIndex = null)
     {
-        char firstChar = valueToSearch[0];
+        char firstChar = valueToSearch[0];  //take the first element
         int indexToReturn = -1;
         bool continueOrNot = true;
-        int alreadyChecked = 0;
+        int currentCheckedIndex = 0;
 
+        //check default value of startIndex
+        if (startIndex == null) startIndex = 0; 
+
+        //Calculations
         //1.Start searching
-        for (int startIndex = 0; startIndex < text.Length; startIndex++)
+        for (int textIndex = (int)startIndex; textIndex < text.Length; textIndex++)
         {
-            if (text[startIndex] == firstChar) //if there is matching
+            if (text[textIndex] == firstChar)  //if there is matching
             {
                 //2.Compare(char by char) the value with the text from current position.
                 for (int valueIndex = 0; valueIndex < valueToSearch.Length; valueIndex++)
                 {
-                    if (valueIndex == 0) indexToReturn = startIndex + valueIndex;
-                    alreadyChecked = startIndex + valueIndex;
+                    if (valueIndex == 0) indexToReturn = textIndex + valueIndex;
+                    currentCheckedIndex = textIndex + valueIndex;
 
-                    if ((startIndex + valueIndex) > text.Length - 1)  //check for "OverFlow Exception" and stop, because no chance for possible matches
+                    if (currentCheckedIndex > text.Length - 1)  //check for "OverFlow Exception" and stop, because no chance for possible matches
                     {
                         indexToReturn = -1;
                         continueOrNot = false;
                         break;
                     }
-                    else if (text[startIndex + valueIndex] != valueToSearch[valueIndex])  //if all chars of "valueToSearch" not matched, break and return index -1
+                    else if (text[currentCheckedIndex] != valueToSearch[valueIndex])  //if all chars of "valueToSearch" not matched, break and return index -1
                     {
                         indexToReturn = -1;
                         break;
@@ -43,7 +47,7 @@ class StringBuilder_IndexOf_byTodor
                 }
             }
 
-            if (alreadyChecked > startIndex) startIndex = alreadyChecked;
+            if (currentCheckedIndex > textIndex) textIndex = currentCheckedIndex;
 
             if (continueOrNot == false || indexToReturn != -1) break;
         }
