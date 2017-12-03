@@ -74,11 +74,21 @@ namespace PrintArrays_JaggedArrays_
 
             //VI. Create Array of "StringBuilders"
             int n = 5;
+            ///////////////////////////////////////////////
             StringBuilder[] sbArray = new StringBuilder[n];
             for (int i = 0; i < n; i++)
             {
                 sbArray[i] = new StringBuilder();
             }
+            ///////////////////////////////////////////////
+            //VIa.ANY elements, form ANY row(dimension) with text can be accessed, like a "Jagged Arrays"
+            ////////////////////////////////////////
+            sbArray[0].Append("my text here");
+            Console.WriteLine("\n" + sbArray[0][3] 
+                                   + sbArray[0][4] 
+                                   + sbArray[0][5] 
+                                   + sbArray[0][6]);
+            ////////////////////////////////////////
 
         }
     }
