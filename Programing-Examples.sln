@@ -159,6 +159,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "+FakeTextMarkupLanguage", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableType-Tricks", "NullableType\NullableType-Tricks.csproj", "{75DA366D-4D50-4E6A-81D6-CF4C9F414ED3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary(TKey, TValue)", "Dictionary\Dictionary(TKey, TValue).csproj", "{C9BE50FD-453E-4BF0-9641-FCDE582F2F37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -469,6 +471,10 @@ Global
 		{75DA366D-4D50-4E6A-81D6-CF4C9F414ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75DA366D-4D50-4E6A-81D6-CF4C9F414ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75DA366D-4D50-4E6A-81D6-CF4C9F414ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BE50FD-453E-4BF0-9641-FCDE582F2F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BE50FD-453E-4BF0-9641-FCDE582F2F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BE50FD-453E-4BF0-9641-FCDE582F2F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BE50FD-453E-4BF0-9641-FCDE582F2F37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
