@@ -63,3 +63,5 @@ class RegularExpressions
     }
 }
 
+//Regex.Match method, return type: System.Text.RegularExpressions.Match
+//more info: https://msdn.microsoft.com/en-us/library/twcw2f1c(v=vs.110).aspx
