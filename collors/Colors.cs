@@ -1,7 +1,6 @@
 ﻿using System;
 
-
-class Collors
+class Colors
 {
     static void Main()
     {
