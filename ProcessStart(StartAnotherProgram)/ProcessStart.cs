@@ -24,13 +24,13 @@ class ProcessStart
         }
 
         string relativePath = ".." + slashOS + ".." + slashOS + ".." 
-                                   + slashOS + "DateTime" + slashOS + "bin" + slashOS + "Debug";
+                                   + slashOS + "Bitwise-Techniques" + slashOS + "bin" + slashOS + "Debug";
         //NOTE: on Win machine this mean: @"..\..\..\DateTime\bin\Debug"
 
         //////////////////////////////////////////////////////////////////////////////
         Process program = new Process();
         program.StartInfo.WorkingDirectory = relativePath;
-        program.StartInfo.FileName = "DateTime.exe";
+        program.StartInfo.FileName = "Bitwise-Techniques.exe";
         program.Start();
 
         try
