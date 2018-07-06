@@ -48,7 +48,16 @@ class ProcessStart
     }
 }
 
+//Process.Start(), StartInfo() method and more..
+//https://stackoverflow.com/questions/181719/how-do-i-start-a-process-from-c
+//https://stackoverflow.com/questions/240171/launching-an-application-exe-from-c
+//https://www.codeproject.com/Articles/4272/Using-Diagnostics-Process-to-start-an-external-app
+
 //Process.WaitForExit Method() and more..
+//https://stackoverflow.com/questions/3147911/wait-until-a-process-ends
 //https://msdn.microsoft.com/en-us/library/fb4aw7b8(v=vs.110).aspx
 //https://msdn.microsoft.com/en-us/library/system.diagnostics.process.exited(v=vs.110).aspx
 //WARNING: WaitForExit() method do NOT work in "Mono" for now !!!
+
+//Directory.SetCurrentDirectory Method:
+//https://msdn.microsoft.com/en-us/library/system.io.directory.setcurrentdirectory(v=vs.110).aspx
