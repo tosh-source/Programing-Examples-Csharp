@@ -23,18 +23,18 @@ class ProcessStart
             throw new Exception("OS was not detected correctly!");
         }
 
-        string relativePath = ".." + slashOS + ".." + slashOS + ".." 
+        string relativePath = ".." + slashOS + ".." + slashOS + ".."
                                    + slashOS + "Bitwise-Techniques" + slashOS + "bin" + slashOS + "Debug";
         //NOTE: on Win machine this mean: @"..\..\..\DateTime\bin\Debug"
 
         //////////////////////////////////////////////////////////////////////////////
         Process program = new Process();
-        program.StartInfo.WorkingDirectory = relativePath;
-        program.StartInfo.FileName = "Bitwise-Techniques.exe";
-        program.Start();
-
         try
         {
+            program.StartInfo.WorkingDirectory = relativePath;
+            program.StartInfo.FileName = "Bitwise-Techniques.exe";
+            //program.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;  //minimize window
+            program.Start();
             Console.WriteLine("Is program respond normally? = " + program.Responding);
             program.WaitForExit(1000 * 60 * 1);    //Wait for 1 minute to exit (alternatively wait for 5 minutes: (1000 * 60 * 5)). 
             Console.WriteLine("Is program exited normally? =  " + program.HasExited);
