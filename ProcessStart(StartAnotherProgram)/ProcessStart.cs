@@ -34,8 +34,10 @@ class ProcessStart
             program.StartInfo.WorkingDirectory = relativePath;
             program.StartInfo.FileName = "Bitwise-Techniques.exe";
             //program.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;  //minimize window
+
             program.Start();
             Console.WriteLine("Is program respond normally? = " + program.Responding);
+            //program.Kill();  //kill started process immediately
             program.WaitForExit(1000 * 60 * 1);    //Wait for 1 minute to exit (alternatively wait for 5 minutes: (1000 * 60 * 5)). 
             Console.WriteLine("Is program exited normally? =  " + program.HasExited);
         }
