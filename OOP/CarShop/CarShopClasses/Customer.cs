@@ -76,10 +76,10 @@ namespace CarShop.CarShopClasses
         //Default Constructor with parameters
         public Customer(string firstName = "Unknown", string lastName = "Unknown", int age = 0, string customerCarModel = "Unknown") 
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
-            this.customerCarModel = customerCarModel;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Age = age;
+            this.CustomerCarModel = customerCarModel;
         }
     }
 }
