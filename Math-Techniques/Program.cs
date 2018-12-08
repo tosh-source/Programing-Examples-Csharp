@@ -11,19 +11,31 @@ namespace Math_Techniques
     {
         static void Main(string[] args)
         {
-            //Use "BigInteger.Pow()" for more PRECISION result, instead of "Math.Pow()"
+            //I.Pow() method
+            //INPORTANT: Use "BigInteger.Pow()" for more PRECISION result, instead of "Math.Pow()"
             //
-            //BigInteger.Pow()
+            //Ia. BigInteger.Pow()
             BigInteger result = 0;
             ////////////////////////////////////
             result = 9 * BigInteger.Pow(9, 100);
             ////////////////////////////////////
             Console.WriteLine(result);
-
-            //Math.Pow() <- 
+            //
+            //Ib. Math.Pow() <- 
             BigInteger result2 = 0;
+            ///////////////////////////////////////////
             result2 = 9 * (BigInteger)Math.Pow(9, 100);
+            ///////////////////////////////////////////
             Console.WriteLine("\n" + result2);
+
+            //II.Digit rounding (закръгляне на число)
+            double precise = 8.7654321;
+            double round3 = Math.Round(precise, 3);
+            double round1 = Math.Round(precise, 1);
+            Console.WriteLine(precise + string.Format("{0,20}", "(without rounding)"));
+            Console.WriteLine(round3 + string.Format("{0,29}", "(three digits rounding)"));
+            Console.WriteLine(round1 + string.Format("{0,28}", "(one digit rounding)"));
+
         }
     }
 }

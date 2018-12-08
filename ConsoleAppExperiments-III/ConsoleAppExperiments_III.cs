@@ -12,13 +12,6 @@ class ConsoleAppExperiments_III
 {
     static void Main(string[] args)
     {
-        //закръгляне на число
-        //double precise = 8.7654321;
-        //double round3 = Math.Round(precise, 3);
-        //double round1 = Math.Round(precise, 1);
-        //Console.WriteLine(precise + string.Format("{0,20}", "(without rounding)"));
-        //Console.WriteLine(round3 + string.Format("{0,29}", "(three digits rounding)"));
-        //Console.WriteLine(round1 + string.Format("{0,28}", "(one digit rounding)"));
 
         string abc = "(3+5.3)*2.7-ln(22)/pow(2.2,-1.7)";
         for (int i = 0; i < abc.Length; i++)
