@@ -163,6 +163,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary(TKey, TValue)"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessStart(StartAnotherProgram)", "ProcessStart(StartAnotherProgram)\ProcessStart(StartAnotherProgram).csproj", "{D93EFF70-A40C-499D-AA69-CE5C643066B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predicate(T)", "Predicate(T)\Predicate(T).csproj", "{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -481,6 +483,10 @@ Global
 		{D93EFF70-A40C-499D-AA69-CE5C643066B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93EFF70-A40C-499D-AA69-CE5C643066B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93EFF70-A40C-499D-AA69-CE5C643066B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

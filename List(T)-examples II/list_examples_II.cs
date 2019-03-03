@@ -17,7 +17,7 @@ class list_examples_II
         listOfListOfIntegers[0][0] = 23;   //промяна на същата тази стойност ("342")
         Console.WriteLine(listOfListOfIntegers[0][0]);
 
-        //II. Is List HAVE a vakue?  //Проверка дали List съдържа НЯКАКВА стойност.
+        //II. Is List HAVE a value?  //Проверка дали List съдържа НЯКАКВА стойност.
         List<int> someList = new List<int>();
         someList.Add(346); //1. parse integer value: 346
         ///////////////////////////////////////////
