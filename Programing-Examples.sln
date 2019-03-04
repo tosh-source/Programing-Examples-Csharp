@@ -165,6 +165,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessStart(StartAnotherPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predicate(T)", "Predicate(T)\Predicate(T).csproj", "{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List(T)-examples-III", "List(T)-examples-III\List(T)-examples-III.csproj", "{E02A2DD3-8E6F-45F9-937D-8D150FB2B1E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -487,6 +489,10 @@ Global
 		{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F1F7F27-F11F-4C3B-8E0C-92882DE86D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02A2DD3-8E6F-45F9-937D-8D150FB2B1E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02A2DD3-8E6F-45F9-937D-8D150FB2B1E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02A2DD3-8E6F-45F9-937D-8D150FB2B1E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02A2DD3-8E6F-45F9-937D-8D150FB2B1E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
