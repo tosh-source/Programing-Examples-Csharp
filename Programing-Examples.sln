@@ -169,7 +169,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List(T)-examples-III", "Lis
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GSM_MobilePhone_Homework", "GSM_MobilePhone_Homework", "{19C061C1-1588-49C7-832B-31D28D418CEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homeworkMobilePhone", "OOP\GSM_MobilePhone_Homework\homeworkMobilePhone\homeworkMobilePhone.csproj", "{253192CD-C063-4360-9EF7-16C5C3E2C5FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkMobilePhone", "OOP\GSM_MobilePhone_Homework\homeworkMobilePhone\HomeworkMobilePhone.csproj", "{253192CD-C063-4360-9EF7-16C5C3E2C5FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSMtest", "OOP\GSM_MobilePhone_Homework\GSMtest\GSMtest.csproj", "{3649DFBC-EBA3-46D8-A7A7-EE591B8B7C55}"
 EndProject

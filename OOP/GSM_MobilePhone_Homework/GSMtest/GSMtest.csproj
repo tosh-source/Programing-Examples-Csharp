@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\homeworkMobilePhone\HomeworkMobilePhone.csproj">
+      <Project>{253192cd-c063-4360-9ef7-16c5c3e2c5fb}</Project>
+      <Name>HomeworkMobilePhone</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
