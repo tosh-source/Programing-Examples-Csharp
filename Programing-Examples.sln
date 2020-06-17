@@ -115,7 +115,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math-Techniques", "Math-Tec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitwise-Techniques", "Bitwise-Techniques\Bitwise-Techniques.csproj", "{AE69CBB6-3122-463B-BCEA-07AAA590CC78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput-Techniques2", "InputOutput-Techniques2\InputOutput-Techniques2.csproj", "{E44ED105-BE14-4ACA-BC5F-8992818CCD45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput-Techniques (Console.SetIn())", "InputOutput-Techniques2\InputOutput-Techniques (Console.SetIn()).csproj", "{E44ED105-BE14-4ACA-BC5F-8992818CCD45}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{70C0B705-7310-4C66-B1A1-5B0DD28DEE03}"
 EndProject
