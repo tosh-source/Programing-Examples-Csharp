@@ -39,3 +39,6 @@ namespace Math_Techniques
         }
     }
 }
+
+//Performing Math operations on decimal data-type in C# -> https://stackoverflow.com/questions/4124189/performing-math-operations-on-decimal-datatype-in-c
+
