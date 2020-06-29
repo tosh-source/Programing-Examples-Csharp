@@ -40,5 +40,9 @@ namespace Math_Techniques
     }
 }
 
+//Math Sqrt Decimal in C#//
+//=========================
 //Performing Math operations on decimal data-type in C# -> https://stackoverflow.com/questions/4124189/performing-math-operations-on-decimal-datatype-in-c
+//Math Sqrt Decimal in C# -> https://www.csharp-console-examples.com/general/math-sqrt-decimal-in-c/
+//=========================
 
