@@ -175,6 +175,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSMtest", "OOP\GSM_MobilePh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSMCallHistoryTest", "OOP\GSM_MobilePhone_Homework\GSMCallHistoryTest\GSMCallHistoryTest.csproj", "{474D7596-E2AB-4B6C-A48D-69E97D9402AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_IO_(ReadTextAsByte)", "Stream_IO_(ReadTextAsByte)\Stream_IO_(ReadTextAsByte).csproj", "{81A715EB-E3D5-4DC8-9C29-041C20D316E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -513,6 +515,10 @@ Global
 		{474D7596-E2AB-4B6C-A48D-69E97D9402AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{474D7596-E2AB-4B6C-A48D-69E97D9402AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{474D7596-E2AB-4B6C-A48D-69E97D9402AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A715EB-E3D5-4DC8-9C29-041C20D316E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A715EB-E3D5-4DC8-9C29-041C20D316E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A715EB-E3D5-4DC8-9C29-041C20D316E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A715EB-E3D5-4DC8-9C29-041C20D316E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
