@@ -22,6 +22,13 @@ namespace Stream_IO__ReadTextAsByte_
             var thirdPathToTXTfile = @"..\..\testDoc3 (symbols in Cyrillic-UTF8).txt";
             Console.WriteLine(Environment.NewLine + "Third Text:");
             TextAsByteReader(thirdPathToTXTfile);
+
+            var folderOnDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) 
+                                                            + Path.DirectorySeparatorChar         //This is OS independent path slash getter. Backslash in Win and slash in Unix.
+                                                            + "createSomeTXTfileForTests.txt";    //This mean: ~\Desktop + \\ + createSomeTXTfileForTests.txt
+            Console.WriteLine(Environment.NewLine + "Text file on Desktop: ");
+            TextAsByteReader(folderOnDesktop);
+
         }
 
         private static void TextAsByteReader(string pathToTXTfile)
