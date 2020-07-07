@@ -23,30 +23,40 @@ namespace Stream_IO__ReadTextAsByte_
             Console.WriteLine(Environment.NewLine + "Third Text:");
             TextAsByteReader(thirdPathToTXTfile);
 
-            var folderOnDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) 
+            var folderOnDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)
                                                             + Path.DirectorySeparatorChar         //This is OS independent path slash getter. Backslash in Win and slash in Unix.
                                                             + "createSomeTXTfileForTests.txt";    //This mean: ~\Desktop + \\ + createSomeTXTfileForTests.txt
             Console.WriteLine(Environment.NewLine + "Text file on Desktop: ");
             TextAsByteReader(folderOnDesktop);
-
         }
 
         private static void TextAsByteReader(string pathToTXTfile)
         {
-            using (var allTextAsByte = new FileStream(pathToTXTfile, FileMode.Open))
+            try
             {
-                for (int counter = 1; counter <= allTextAsByte.Length; counter++)
+                using (var allTextAsByte = new FileStream(pathToTXTfile, FileMode.Open))
                 {
-                    int currenByte = allTextAsByte.ReadByte();
+                    for (int counter = 1; counter <= allTextAsByte.Length; counter++)
+                    {
+                        int currenByte = allTextAsByte.ReadByte();
 
-                    Console.Write("{0:X} ", currenByte);
+                        Console.Write("{0:X} ", currenByte);
 
-                    //Create new line after every 10 byte. 
-                    //This is just for grouping amount of bytes.
-                    if (counter % 10 == 0) Console.WriteLine();
+                        //Create new line after every 10 byte. 
+                        //This is just for grouping amount of bytes.
+                        if (counter % 10 == 0) Console.WriteLine();
+                    }
                 }
+                Console.WriteLine();
             }
-            Console.WriteLine();
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("TXT file was not found!");
+            }
+            catch (Exception er)
+            {
+                Console.WriteLine("Unexpended error! " + er.Message);
+            }
         }
     }
 }
