@@ -51,7 +51,7 @@ namespace Stream_IO__ReadTextAsByte_
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine("TXT file was not found!");
+                Console.WriteLine("TXT file was not found!" + Environment.NewLine);
             }
             catch (Exception er)
             {
