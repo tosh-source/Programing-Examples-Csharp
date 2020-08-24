@@ -179,6 +179,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_IO_(ReadTextAsByte)"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Point3D_ImplementGetEnumerator", "Point3D_ImplementGetEnumerator\Point3D_ImplementGetEnumerator.csproj", "{4EEDF928-8622-416A-AB8B-67558A4283F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic-T-methods", "OOP\Generic-T-methods\Generic-T-methods.csproj", "{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -525,6 +527,10 @@ Global
 		{4EEDF928-8622-416A-AB8B-67558A4283F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EEDF928-8622-416A-AB8B-67558A4283F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EEDF928-8622-416A-AB8B-67558A4283F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -546,6 +552,7 @@ Global
 		{3649DFBC-EBA3-46D8-A7A7-EE591B8B7C55} = {19C061C1-1588-49C7-832B-31D28D418CEE}
 		{474D7596-E2AB-4B6C-A48D-69E97D9402AF} = {19C061C1-1588-49C7-832B-31D28D418CEE}
 		{4EEDF928-8622-416A-AB8B-67558A4283F2} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
+		{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16D2216E-BE38-4CC7-B5F1-7AC595FDFC49}
