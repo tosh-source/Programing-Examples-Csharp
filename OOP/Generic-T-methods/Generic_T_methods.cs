@@ -10,6 +10,16 @@ namespace Generic_T_methods
     {
         static void Main(string[] args)
         {
+            int[] numbeers = { 5, 1, 2, 3, 4, 6 };
+            string[] names = { "Pesho", "Gosho", "Stamat", "Mariyka" };
+
+            PrintArray(numbeers);
+            Sort(numbeers);
+            PrintArray(numbeers);
+
+            PrintArray(names);
+            Sort(names);
+            PrintArray(names);
         }
 
         static void PrintArray<T>(T[] items, string separator = null)
@@ -27,7 +37,7 @@ namespace Generic_T_methods
             Console.WriteLine();
         }
 
-        static void Sort<T>(T[] items) where T : IComparable<T>
+        static void Sort<T>(T[] items) where T : IComparable<T>  //to use "CompareTo()" method, we need from IComparable<T>
         {
             for (int firstItem = 0; firstItem < items.Length; firstItem++)
             {
