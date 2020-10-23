@@ -83,6 +83,15 @@ namespace LambdaExpression_LINQ
             //////////////////////////////////////////////////////////////
             Console.WriteLine("\nText: " + text + "\nLetter in text: " + countDigit + "\nDigit in text:" + countLetter);
 
+            //IV. Copy Arrays with Linq. 
+            //NOTE: Copy as separate objects, not shallow/reference copy. For more info visit: Arrays > CopyArraysAndMatrices
+            int[][] jaggMatrix =
+            {
+                new int[] { 23, 76 },
+                new int[] { 56, 12 }
+            };
+
+            int[][] copyOfjaggMatrix = jaggMatrix.Select(x => x.ToArray()).ToArray();  //Lambda can copy ONLY one dimensional array or jagged arrays!
         }
     }
 }
