@@ -9,7 +9,7 @@ namespace CopyArraysAndMatrices
         static void Main(string[] args)
         {
             //How to really copy arrays and matrices.
-            //NOTE: Copy as separate objects, not shallow/reference copy.
+            //NOTE: Copy as separate objects, not reference copy.
 
             //First variant.
             int[,] matrix =
