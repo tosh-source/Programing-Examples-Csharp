@@ -183,6 +183,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic-T-methods", "OOP\Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyArraysAndMatrices", "CopyArraysAndMatrices\CopyArraysAndMatrices.csproj", "{5C4BBDC5-8A1C-485F-A708-C45152DD3A11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "OOP\Abstraction\Abstraction.csproj", "{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -537,6 +539,10 @@ Global
 		{5C4BBDC5-8A1C-485F-A708-C45152DD3A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C4BBDC5-8A1C-485F-A708-C45152DD3A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C4BBDC5-8A1C-485F-A708-C45152DD3A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -560,6 +566,7 @@ Global
 		{4EEDF928-8622-416A-AB8B-67558A4283F2} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{5C4BBDC5-8A1C-485F-A708-C45152DD3A11} = {282C133C-1664-4DBC-A958-808C8EA1DEE8}
+		{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16D2216E-BE38-4CC7-B5F1-7AC595FDFC49}
