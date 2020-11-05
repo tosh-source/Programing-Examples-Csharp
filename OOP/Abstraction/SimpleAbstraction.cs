@@ -24,7 +24,7 @@ namespace Abstraction
             string result = string.Empty;
             foreach (var currentItem in collection)
             {
-                result += currentItem + Environment.NewLine;  //Using directly Console.WriteLine() is not very abstractive! So return value as string is used instead! 
+                result += currentItem.ToString() + Environment.NewLine;  //Using directly Console.WriteLine() is not very abstractive! So return value as string is used instead! 
             }
 
             return result;
