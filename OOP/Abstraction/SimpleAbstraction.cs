@@ -19,7 +19,7 @@ namespace Abstraction
             Console.WriteLine(PrintAnyCollections(listOfStr));
         }
 
-        public static string PrintAnyCollections<T>(IEnumerable<T> collection)  //Use more abstractive class/interface as IEnumerable<T>, ICollection<T> and etc., instead of List<T> and so on..
+        public static string PrintAnyCollections<T>(IEnumerable<T> collection)  //Use more abstractive class/interface as IEnumerable<T>, ICollection<T>, IList<T> and etc., instead of List<T> and so on..
         {
             string result = string.Empty;
             foreach (var currentItem in collection)
