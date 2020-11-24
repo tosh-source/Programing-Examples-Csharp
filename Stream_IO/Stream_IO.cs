@@ -10,13 +10,14 @@ class Stream_IO
     static void Main(string[] args)
     {
         //I. File writing (stream output)
-        string fileName = @"..\..\testDoc.txt";
+        string filePath = @"..\..\";
+        string fileName = "testDoc.txt";
         //////////////////////////////////////////////////////////////
-        using (StreamWriter streamWriter = new StreamWriter(fileName))  //<- or: "TextWriter writer = new StreamWriter(fileName);" 
+        using (StreamWriter fileWriter = new StreamWriter(filePath + fileName))  //<- or: "TextWriter writer = new StreamWriter(fileName);" 
         { //"using { }" code block replace .Close() method
             for (int numbs = 1; numbs <= 350; numbs++)
             {
-                streamWriter.WriteLine(numbs);
+                fileWriter.WriteLine(numbs);
             }
         }
         //////////////////////////////////////////////////////////////
