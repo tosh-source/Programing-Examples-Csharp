@@ -9,11 +9,12 @@ class Stream_IO
 {
     static void Main(string[] args)
     {
-        //I. File writing (stream output)
         string filePath = @"..\..\";
         string fileName = "testDoc.txt";
+
+        //I. File writing (stream output)
         //////////////////////////////////////////////////////////////
-        using (StreamWriter fileWriter = new StreamWriter(filePath + fileName))  //<- or: "TextWriter writer = new StreamWriter(fileName);" 
+        using (StreamWriter fileWriter = new StreamWriter(filePath + fileName))  //<- or: "TextWriter writer = new StreamWriter(filePath + fileName);" 
         { //"using { }" code block replace .Close() method
             for (int numbs = 1; numbs <= 350; numbs++)
             {
@@ -21,11 +22,10 @@ class Stream_IO
             }
         }
         //////////////////////////////////////////////////////////////
-        
+
         //II. File reading (stream input)
-        string fileForReading = @"..\..\testDoc.txt";
         /////////////////////////////////////////////////////
-        TextReader reader = new StreamReader(fileForReading);  //<- or: "StreamReader streamReader = new StreamReader(fileForReading);"
+        TextReader reader = new StreamReader(filePath + fileName);  //<- or: "StreamReader streamReader = new StreamReader(filePath + fileName);"
         string textFromFile = reader.ReadToEnd(); //.ReadLine() will read ONLY first line of document, .ReadToEnd() read all line of document. 
         Console.WriteLine(textFromFile);
         reader.Close(); //The stream need to be CLOSED! Or just use "using { }" code block, instead this.
