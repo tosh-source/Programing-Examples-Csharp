@@ -7,7 +7,7 @@
     <ProjectGuid>{EB9BDB61-09B9-44AF-A2F3-3A770E5887A8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Delegates_T_</RootNamespace>
-    <AssemblyName>Delegates_T_</AssemblyName>
+    <AssemblyName>Delegates%28T%29</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Delegates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
