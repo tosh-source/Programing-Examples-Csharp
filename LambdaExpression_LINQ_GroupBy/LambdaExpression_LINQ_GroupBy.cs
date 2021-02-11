@@ -24,6 +24,7 @@ namespace LambdaExpression_LINQ_GroupBy
 
             //Group Student by their ages.
             var studentsByGroups = listOfStudents.GroupBy(student => student.Age).ToList();
+            //NOTE: 'GroupBy' should always be in last position in queries! Example: .Where() -> .OrderBy() -> GroupBy()
 
             foreach (var currentGroup in studentsByGroups)
             {
