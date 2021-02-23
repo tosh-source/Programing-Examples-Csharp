@@ -193,6 +193,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpression_LINQ_Group
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{F2748A62-D968-42DD-BFD2-55DC4F92981E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "OOP\Polymorphism\Polymorphism.csproj", "{33F23BF1-32BF-4F6F-9083-0320640BCFCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -567,6 +569,10 @@ Global
 		{F2748A62-D968-42DD-BFD2-55DC4F92981E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2748A62-D968-42DD-BFD2-55DC4F92981E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2748A62-D968-42DD-BFD2-55DC4F92981E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F23BF1-32BF-4F6F-9083-0320640BCFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F23BF1-32BF-4F6F-9083-0320640BCFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F23BF1-32BF-4F6F-9083-0320640BCFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F23BF1-32BF-4F6F-9083-0320640BCFCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -591,6 +597,7 @@ Global
 		{1B8FE503-8BCE-45A7-8A8E-EED9F329CBAE} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{5C4BBDC5-8A1C-485F-A708-C45152DD3A11} = {282C133C-1664-4DBC-A958-808C8EA1DEE8}
 		{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
+		{33F23BF1-32BF-4F6F-9083-0320640BCFCA} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16D2216E-BE38-4CC7-B5F1-7AC595FDFC49}
