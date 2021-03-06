@@ -16,7 +16,7 @@ namespace Polymorphism
 
             Control secondControl = new Button();
             Console.WriteLine();
-            secondControl.Draw();                   //Polymorphism in action. Base class "Control" wrap his successor class "Button", but can provide method FROM class "Button".
+            secondControl.Draw();                   //Polymorphism in action. Base class "Control" provide logic from HIS derived class "Button".
 
             Control thirdControl = new RadioButton();
             Console.WriteLine();
