@@ -49,7 +49,7 @@ namespace Polymorphism
 
     public class Button : Control
     {
-        public override void Draw()                 //Polymorphism is possible when we override/implement virtual methods come from base class. Then base class can access methods from it's 
+        public override void Draw()                 //Polymorphism is possible when we override/implement virtual methods come from base class. After that, the base class can directly access methods(and their different implementations) from its derived(child) classes.
         {
             Console.WriteLine("Button.Draw()");
             base.Draw();                            //Optional, if we want to access base class implementation.
