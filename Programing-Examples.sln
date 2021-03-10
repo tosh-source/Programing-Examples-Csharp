@@ -195,6 +195,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "Extensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "OOP\Polymorphism\Polymorphism.csproj", "{33F23BF1-32BF-4F6F-9083-0320640BCFCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism-Shape", "OOP\Polymorphism-Shape\Polymorphism-Shape.csproj", "{1E0D94AF-F353-40F5-9521-6B18B9ABE846}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -573,6 +575,10 @@ Global
 		{33F23BF1-32BF-4F6F-9083-0320640BCFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33F23BF1-32BF-4F6F-9083-0320640BCFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33F23BF1-32BF-4F6F-9083-0320640BCFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E0D94AF-F353-40F5-9521-6B18B9ABE846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0D94AF-F353-40F5-9521-6B18B9ABE846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0D94AF-F353-40F5-9521-6B18B9ABE846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0D94AF-F353-40F5-9521-6B18B9ABE846}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -598,6 +604,7 @@ Global
 		{5C4BBDC5-8A1C-485F-A708-C45152DD3A11} = {282C133C-1664-4DBC-A958-808C8EA1DEE8}
 		{6FFB3759-FBDB-4D83-92AE-1D35F0A88CF6} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{33F23BF1-32BF-4F6F-9083-0320640BCFCA} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
+		{1E0D94AF-F353-40F5-9521-6B18B9ABE846} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16D2216E-BE38-4CC7-B5F1-7AC595FDFC49}
