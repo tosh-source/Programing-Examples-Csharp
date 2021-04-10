@@ -12,6 +12,7 @@ namespace ImplementGetEnumerator_CatOwner
         static void Main(string[] args)
         {
             //Based on "Separation of concerns" pattern, Owner logic is separated of Enumerator logic.
+            //see video --> Обща система от типове в .NET (CTS) - 25 март 2015 - Ивайло.mp4 (time: 1:57:33)
 
             var cats = new List<Cat>
                 {
