@@ -27,7 +27,7 @@ namespace ImplementGetEnumeratorWithYield
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return this.GetEnumerator();
         }
     }
 }
