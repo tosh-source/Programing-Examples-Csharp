@@ -199,6 +199,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism-Shape", "OOP\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementGetEnumeratorWithYield", "OOP\ImplementGetEnumeratorWithYield\ImplementGetEnumeratorWithYield.csproj", "{74EDD227-25E8-4341-B104-AADA09333B9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "OOP\Reflection\Reflection.csproj", "{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementGetEnumerator_CatOwner", "OOP\ImplementGetEnumerator_CatOwner\ImplementGetEnumerator_CatOwner.csproj", "{1697B8B4-5746-4920-8C16-3C951C0EA95C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -585,6 +589,14 @@ Global
 		{74EDD227-25E8-4341-B104-AADA09333B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74EDD227-25E8-4341-B104-AADA09333B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74EDD227-25E8-4341-B104-AADA09333B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1697B8B4-5746-4920-8C16-3C951C0EA95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1697B8B4-5746-4920-8C16-3C951C0EA95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1697B8B4-5746-4920-8C16-3C951C0EA95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1697B8B4-5746-4920-8C16-3C951C0EA95C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -612,6 +624,8 @@ Global
 		{33F23BF1-32BF-4F6F-9083-0320640BCFCA} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{1E0D94AF-F353-40F5-9521-6B18B9ABE846} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{74EDD227-25E8-4341-B104-AADA09333B9F} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
+		{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
+		{1697B8B4-5746-4920-8C16-3C951C0EA95C} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16D2216E-BE38-4CC7-B5F1-7AC595FDFC49}
