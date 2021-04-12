@@ -16,15 +16,15 @@ class Program
 
         Console.WriteLine(new string('*', 15));
 
-        //2. със "is" (за разлика от "typeof") можем да проверим въдът на променлива създадена от нас
+        //2. със "is" (за разлика от "typeof") можем да проверим видът на променлива създадена от нас
         int someInt = 55;
-        Console.WriteLine(someInt is object);       //огт: True
-        Console.WriteLine(someInt is string);       //огт: False
-        Console.WriteLine(someInt is Array);        //огт: False
-        Console.WriteLine(someInt is int);          //огт: True
-        Console.WriteLine(someInt is BigInteger);   //огт: False
-        Console.WriteLine("abc" is object);         //огт: True
-        Console.WriteLine("abc" is int);            //огт: False
+        Console.WriteLine(someInt is object);       //отг: True
+        Console.WriteLine(someInt is string);       //отг: False
+        Console.WriteLine(someInt is Array);        //отг: False
+        Console.WriteLine(someInt is int);          //отг: True
+        Console.WriteLine(someInt is BigInteger);   //отг: False
+        Console.WriteLine("abc" is object);         //отг: True
+        Console.WriteLine("abc" is int);            //отг: False
 
         Console.WriteLine(new string('*', 15));
 
@@ -63,6 +63,8 @@ class Program
 /////////////////////////////////////////////////
 //"is" returns true if an instance is in the inheritance tree.
 /////////////////////////////////////////////////
+
+//Looking for Reflection? --> take a look in project: OOP/Reflection/Reflection.cs
 
 //for more information: https://stackoverflow.com/questions/983030/type-checking-typeof-gettype-or-is
 //for more information: https://stackoverflow.com/questions/17495402/typeoft-vs-object-gettype-performance?noredirect=1&lq=1
