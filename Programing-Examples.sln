@@ -59,8 +59,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch-Case", "Switch-Case\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch-Case-AdvancedExample", "Switch-Case-AdvancedExample\Switch-Case-AdvancedExample.csproj", "{734C92C1-4A5D-41B6-A0A3-799C43D48D73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML5", "HTML5\HTML5.csproj", "{9F4174F6-1B45-4557-B976-C4A832916E3F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput-Techniques", "InputOutput-Techniques\InputOutput-Techniques.csproj", "{23BA725E-2124-4F5D-9BF8-4DD2BC59C401}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppExperiments-II", "ConsoleAppExperiments-II\ConsoleAppExperiments-II.csproj", "{84CF1F93-AEDB-4264-995F-10B479F39BFD}"
@@ -321,10 +319,6 @@ Global
 		{734C92C1-4A5D-41B6-A0A3-799C43D48D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{734C92C1-4A5D-41B6-A0A3-799C43D48D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{734C92C1-4A5D-41B6-A0A3-799C43D48D73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F4174F6-1B45-4557-B976-C4A832916E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F4174F6-1B45-4557-B976-C4A832916E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F4174F6-1B45-4557-B976-C4A832916E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F4174F6-1B45-4557-B976-C4A832916E3F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23BA725E-2124-4F5D-9BF8-4DD2BC59C401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23BA725E-2124-4F5D-9BF8-4DD2BC59C401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23BA725E-2124-4F5D-9BF8-4DD2BC59C401}.Release|Any CPU.ActiveCfg = Release|Any CPU
