@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooleanLogicalDemo-If-Else-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Char-Tricks", "CharUnicodePrint\Char-Tricks.csproj", "{8AA6A83E-C9D9-4380-9344-6815CBA1B484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintTheUniversalObjectContainer", "PrintTheUniversalObjectContainer\PrintTheUniversalObjectContainer.csproj", "{8C4C23FF-D0E7-48F6-9658-70C309E0877F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynamicObject", "dynamicObject\dynamicObject.csproj", "{EE4E9DBF-F20D-4C31-9376-682E87F132F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkIntegersFor-OverflowException", "checkIntegersFor-OverflowException\checkIntegersFor-OverflowException.csproj", "{ECB3146F-53D4-4986-99BB-19B1A04CFF31}"
@@ -239,10 +237,6 @@ Global
 		{8AA6A83E-C9D9-4380-9344-6815CBA1B484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AA6A83E-C9D9-4380-9344-6815CBA1B484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AA6A83E-C9D9-4380-9344-6815CBA1B484}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C4C23FF-D0E7-48F6-9658-70C309E0877F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C4C23FF-D0E7-48F6-9658-70C309E0877F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C4C23FF-D0E7-48F6-9658-70C309E0877F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C4C23FF-D0E7-48F6-9658-70C309E0877F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EE4E9DBF-F20D-4C31-9376-682E87F132F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE4E9DBF-F20D-4C31-9376-682E87F132F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE4E9DBF-F20D-4C31-9376-682E87F132F4}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -28,8 +28,8 @@ namespace Compare_Two_Objects_Technique
             string score = "sCore";
             string scary = "scary";
             //////////////////////////////////////////
-            Console.WriteLine(score.CompareTo(scary)); //output: 1 /Вория стринг(scary) е лексикографски ПРЕДИ първия(score).
-            Console.WriteLine(scary.CompareTo(score)); //output:-1 (първия стринг е лексикографски ПРЕДИ втория)
+            Console.WriteLine(score.CompareTo(scary)); //output: 1 /Вория стринг(scary) е лексикографски ПРЕДИ първия(score). Т.е., ПЪРВИЯ обект е ПО-ГОЛЯМ!
+            Console.WriteLine(scary.CompareTo(score)); //output:-1 (първия стринг е лексикографски ПРЕДИ втория) Т.е., ВТОРИЯ обект е ПО-ГОЛЯМ!
             Console.WriteLine(scary.CompareTo(scary)); //output: 0 (равни)
             //////////////////////////////////////////
             //ВАЖНО! - Ако исползвахме методът ".Equals()", резултата щеше да е ОБРАТЕН. Защото според "Unicode"таблицата, символа 'C' е преди 'c'!!! Но тук, при метода ".CompareTo()" малките букви са ПРЕДИ големите.
