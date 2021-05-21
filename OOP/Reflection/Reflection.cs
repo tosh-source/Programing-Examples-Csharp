@@ -20,11 +20,11 @@ class Reflection
         Console.WriteLine("Type: " + cat.GetType().Name + newLine);
 
         var objProperties = cat.GetType().GetProperties();
-        foreach (var propertiy in objProperties)
+        foreach (var property in objProperties)
         {
             Console.WriteLine("Property Name: "
-                                + propertiy.Name + ": "
-                                + propertiy.GetValue(cat));
+                                + property.Name + ": "
+                                + property.GetValue(cat));
         }
 
         Console.WriteLine();
