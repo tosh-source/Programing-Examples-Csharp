@@ -10,6 +10,9 @@ namespace LambdaExpression_LINQ_GroupBy
     {
         static void Main(string[] args)
         {
+            //I. Group Students by ages, using LINQ extension methods.
+            Console.WriteLine("Group Students by ages.");
+
             //Using Anonymous Type.
             var listOfStudents = new[]
             {
@@ -32,6 +35,27 @@ namespace LambdaExpression_LINQ_GroupBy
                 foreach (var student in currentGroup)
                 {
                     Console.WriteLine(student.FirstName + " " + student.LastName);
+                }
+            }
+
+            //II.Group numbers by their remainder, using LINQ query keywords.
+            var divisor = 5;
+            Console.WriteLine(Environment.NewLine + 
+                              $"Group numbers by their remainder, when divided by {divisor}.");
+
+            var arrayOfNumbers = new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            var groupsOfNumbers =
+                from number in arrayOfNumbers
+                group number by number % divisor into newGroup
+                select new { Remainder = newGroup.Key, Numbers = newGroup };
+
+            foreach (var currentGroupOfNumbers in groupsOfNumbers)
+            {
+                Console.WriteLine($"Remainder: {currentGroupOfNumbers.Remainder}");
+                foreach (var number in currentGroupOfNumbers.Numbers)
+                {
+                    Console.WriteLine(number);
                 }
             }
         }
