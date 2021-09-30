@@ -6,25 +6,51 @@ using System.Threading.Tasks;
 
 namespace Delegates_T_
 {
-    public delegate int SimpleDelegate<T>(T inputMethod);
+    //Delegates
+    public delegate void TestDelegate(string text);
+    //Generic Delegates
+    public delegate int GenericDelegate<T>(T inputMethod);
 
     class Delegates
     {
         static void Main(string[] args)
         {
-            SimpleDelegate<string> firstSimpleDelegate = int.Parse;
-            SimpleDelegate<int> secondSimpleDelegate = SimpleMethod;
+            //Test delegates
+            var myDelegate = new TestDelegate(TextMethod);
+            myDelegate("My Test Delegate!");
+
+            myDelegate += new TestDelegate(SecondTextMethod);
+            myDelegate("My SECOND test Delegate!");
 
 
-            var parseFirstDelegate = firstSimpleDelegate("234");
-            Console.WriteLine(parseFirstDelegate);
-            parseFirstDelegate = secondSimpleDelegate(45678);
-            Console.WriteLine(parseFirstDelegate);
+            //Generic Delegates
+            GenericDelegate<string> customIntParse = int.Parse;
+            var getValuesFromDelegates = customIntParse("234");
+            Console.WriteLine(getValuesFromDelegates);
+
+            GenericDelegate<int> getIntFromMethod = IntegersMethod;
+            getValuesFromDelegates = getIntFromMethod(45678);
+            Console.WriteLine(getValuesFromDelegates);
+
+            //multicast functionality in delegates
+            getValuesFromDelegates = customIntParse("100");
+            getValuesFromDelegates += getIntFromMethod(20);
+            Console.WriteLine("multicast delegates: {0}", getValuesFromDelegates);
         }
 
-        public static int SimpleMethod(int integer = 456)
+        public static int IntegersMethod(int integer)
         {
             return integer;
+        }
+
+        public static void TextMethod(string someText)
+        {
+            Console.WriteLine(someText);
+        }
+
+        public static void SecondTextMethod(string someText)
+        {
+            Console.WriteLine(someText);
         }
     }
 }
