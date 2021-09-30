@@ -6,24 +6,25 @@ using System.Threading.Tasks;
 
 namespace Delegates_T_
 {
-    //Delegates
+    //I.Delegates
     public delegate void TestDelegate(string text);
-    //Generic Delegates
+    //II.Generic Delegates
     public delegate int GenericDelegate<T>(T inputMethod);
 
     class Delegates
     {
         static void Main(string[] args)
         {
-            //Test delegates
+            //I.Test delegates
             var myDelegate = new TestDelegate(TextMethod);
             myDelegate("My Test Delegate!");
 
+            //*multicast delegates
             myDelegate += new TestDelegate(SecondTextMethod);
             myDelegate("My SECOND test Delegate!");
 
 
-            //Generic Delegates
+            //II.Generic Delegates
             GenericDelegate<string> customIntParse = int.Parse;
             var getValuesFromDelegates = customIntParse("234");
             Console.WriteLine(getValuesFromDelegates);
@@ -32,7 +33,7 @@ namespace Delegates_T_
             getValuesFromDelegates = getIntFromMethod(45678);
             Console.WriteLine(getValuesFromDelegates);
 
-            //multicast functionality in delegates
+            //*multicast delegates
             getValuesFromDelegates = customIntParse("100");
             getValuesFromDelegates += getIntFromMethod(20);
             Console.WriteLine("multicast delegates: {0}", getValuesFromDelegates);
