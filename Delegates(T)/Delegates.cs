@@ -19,7 +19,7 @@ namespace Delegates_T_
             var myDelegate = new TestDelegate(TextMethod);
             myDelegate("My Test Delegate!");
 
-            //*multicast delegates
+            //Ia.multicast delegates
             myDelegate += new TestDelegate(SecondTextMethod);
             myDelegate("My SECOND test Delegate!");
 
@@ -33,15 +33,10 @@ namespace Delegates_T_
             getValuesFromDelegates = getIntFromMethod(45678);
             Console.WriteLine(getValuesFromDelegates);
 
-            //*multicast delegates
+            //Get and calculate results from different delegates to one common variable.
             getValuesFromDelegates = customIntParse("100");
-            getValuesFromDelegates += getIntFromMethod(20);
+            getValuesFromDelegates += getIntFromMethod(20);  //<-- Don't mistake this "+=" with multicast functionality in delegates (see above)!! Here we just add two integers and get result from this addition.
             Console.WriteLine("multicast delegates: {0}", getValuesFromDelegates);
-        }
-
-        public static int IntegersMethod(int integer)
-        {
-            return integer;
         }
 
         public static void TextMethod(string someText)
@@ -52,6 +47,11 @@ namespace Delegates_T_
         public static void SecondTextMethod(string someText)
         {
             Console.WriteLine(someText);
+        }
+
+        public static int IntegersMethod(int integer)
+        {
+            return integer;
         }
     }
 }
