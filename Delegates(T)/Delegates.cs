@@ -38,6 +38,25 @@ namespace Delegates_T_
             getValuesFromDelegates = customIntParse("100");
             getValuesFromDelegates += getIntFromMethod(20);  //<-- Don't mistake this "+=" with multicast functionality in delegates (see above)!! Here we just add two integers and get result from this addition.
             Console.WriteLine("multicast delegates: {0}", getValuesFromDelegates);
+
+
+            //III. Use predefined delegates, Action<T1,T2,T3> and Func<T1,T2,TResult>
+            //NOTE: "Action" is generic predefined void delegate.
+            //NOTE: "Func" is generic predefined delegate with return type TResult.
+            Console.WriteLine("\n" + "Use same methods from example \"I.Test delegates\"");
+            ////////////////////////////////////////////////
+            Action<string> myDelegateAsAction = TextMethod;
+            myDelegateAsAction += SecondTextMethod;
+            myDelegateAsAction += ThirdColoredTextMethod;
+            myDelegateAsAction("My SECOND test Delegate!");
+            ////////////////////////////////////////////////
+            
+            Console.WriteLine("\n" + "Use same methods from example \"II.Generic Delegates\"");
+            ////////////////////////////////////////////////
+            Func<string, int> customIntParseAsFunc = int.Parse;
+            getValuesFromDelegates = customIntParseAsFunc("234");
+            Console.WriteLine(getValuesFromDelegates);
+            ////////////////////////////////////////////////
         }
 
         public static void TextMethod(string someText)
