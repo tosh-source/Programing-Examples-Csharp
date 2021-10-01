@@ -21,8 +21,9 @@ namespace Delegates_T_
 
             //Ia.multicast delegates
             myDelegate += new TestDelegate(SecondTextMethod);
-            myDelegate("My SECOND test Delegate!");
-
+            myDelegate += new TestDelegate(ThirdColoredTextMethod);
+            myDelegate("My SECOND test Delegate!");   //<- Call delegate (and run all assigned method one by one).
+            //NOTE: Delegates run methods in the same order in which they are assigned.
 
             //II.Generic Delegates
             GenericDelegate<string> customIntParse = int.Parse;
@@ -47,6 +48,13 @@ namespace Delegates_T_
         public static void SecondTextMethod(string someText)
         {
             Console.WriteLine(someText);
+        }
+
+        public static void ThirdColoredTextMethod(string someText)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(someText);
+            Console.ResetColor();
         }
 
         public static int IntegersMethod(int integer)
