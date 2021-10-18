@@ -205,6 +205,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpression_LINQ-Carte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpression_LINQ_II", "LambdaExpression_LINQ_II\LambdaExpression_LINQ_II.csproj", "{64F3CE22-C589-4248-A2E3-485340E6339D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractionAndLooseCoupled_Printer", "OOP\AbstractionAndLooseCoupled_Printer\AbstractionAndLooseCoupled_Printer.csproj", "{9B11468D-3313-4648-B6A5-D0F5A0E16451}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -603,6 +605,10 @@ Global
 		{64F3CE22-C589-4248-A2E3-485340E6339D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64F3CE22-C589-4248-A2E3-485340E6339D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64F3CE22-C589-4248-A2E3-485340E6339D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B11468D-3313-4648-B6A5-D0F5A0E16451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B11468D-3313-4648-B6A5-D0F5A0E16451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B11468D-3313-4648-B6A5-D0F5A0E16451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B11468D-3313-4648-B6A5-D0F5A0E16451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -632,6 +638,7 @@ Global
 		{74EDD227-25E8-4341-B104-AADA09333B9F} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{1697B8B4-5746-4920-8C16-3C951C0EA95C} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
+		{9B11468D-3313-4648-B6A5-D0F5A0E16451} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16D2216E-BE38-4CC7-B5F1-7AC595FDFC49}
