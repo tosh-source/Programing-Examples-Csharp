@@ -53,5 +53,23 @@ namespace Override_Equals_GetHashCode_Clone_CompareTo_StudentClass.Models
             hashCode = hashCode * -1521134295 + SocialSecurityNumber.GetHashCode();
             return hashCode;
         }
+
+        public static bool operator ==(Student firstStudent, Student secondStudent) //*
+        {
+            return Student.Equals(firstStudent, secondStudent);
+        }
+        public static bool operator !=(Student firstStudent, Student secondStudent) //*
+        {
+            return Student.Equals(firstStudent, secondStudent);
+        }
     }
 }
+
+//* Good practice:
+//================
+//1. It's better to override reference .Equals() first! NOTE: .GetHashCode() is needed for .Equals()!
+//2. After that you can use STATIC method object.Equals(). This will avoid copy/paste code.
+//2a.REMEMBER to use STATIC method object.Equals()/Student.Equals() when overload operators (== and !=) !!! 
+//2a.If reference .Equals()/firstStudent.Equals() is used instead in static operator ==/!=, the program behavior will be unpredictable and an a exception can be thrown!
+
+//More about override .Equals() and GetHashCode(), see video: "Обща система от типове в .NET (CTS) - 25 март 2015 - Ивайло" in time: |0:57:05 - 1:02:40|
