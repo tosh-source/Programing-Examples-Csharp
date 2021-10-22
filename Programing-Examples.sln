@@ -207,6 +207,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpression_LINQ_II", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractionAndLooseCoupled_Printer", "OOP\AbstractionAndLooseCoupled_Printer\AbstractionAndLooseCoupled_Printer.csproj", "{9B11468D-3313-4648-B6A5-D0F5A0E16451}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Override_Equals_GetHashCode_Clone_CompareTo-StudentClass", "OOP\Override_Equals_GetHashCode_Clone_CompareTo-StudentClass\Override_Equals_GetHashCode_Clone_CompareTo-StudentClass.csproj", "{1AF6ECB0-7F22-492C-A8E6-4501AD2D207E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -609,6 +611,10 @@ Global
 		{9B11468D-3313-4648-B6A5-D0F5A0E16451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B11468D-3313-4648-B6A5-D0F5A0E16451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B11468D-3313-4648-B6A5-D0F5A0E16451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF6ECB0-7F22-492C-A8E6-4501AD2D207E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF6ECB0-7F22-492C-A8E6-4501AD2D207E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF6ECB0-7F22-492C-A8E6-4501AD2D207E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF6ECB0-7F22-492C-A8E6-4501AD2D207E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -639,6 +645,7 @@ Global
 		{5DD9AE5F-8287-4B2C-8D5F-34C727003CC3} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{1697B8B4-5746-4920-8C16-3C951C0EA95C} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 		{9B11468D-3313-4648-B6A5-D0F5A0E16451} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
+		{1AF6ECB0-7F22-492C-A8E6-4501AD2D207E} = {70C0B705-7310-4C66-B1A1-5B0DD28DEE03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16D2216E-BE38-4CC7-B5F1-7AC595FDFC49}
