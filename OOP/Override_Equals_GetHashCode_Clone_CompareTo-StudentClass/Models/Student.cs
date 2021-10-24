@@ -27,7 +27,7 @@ namespace Override_Equals_GetHashCode_Clone_CompareTo_StudentClass.Models
 
         public override bool Equals(object obj) //*
         {
-            var student = obj as Student;
+            var student = obj as Student;  //Using keyword "as" will try to cast object. If fail the object will be null. In this situation standard direct cast ((Student) obj) will throw an exception!
 
             if (student != null &&
                    this.FirstName == student.FirstName &&
@@ -41,16 +41,17 @@ namespace Override_Equals_GetHashCode_Clone_CompareTo_StudentClass.Models
             {
                 return false;
             }
-
         }
 
         public override int GetHashCode() //*
         {
             int hashCode = 743017444;
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(FirstName);
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(MiddleName);
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(LastName);
-            hashCode = hashCode * -1521134295 + SocialSecurityNumber.GetHashCode();
+
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(this.FirstName);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(this.MiddleName);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(this.LastName);
+            hashCode = hashCode * -1521134295 + this.SocialSecurityNumber.GetHashCode();
+
             return hashCode;
         }
 
