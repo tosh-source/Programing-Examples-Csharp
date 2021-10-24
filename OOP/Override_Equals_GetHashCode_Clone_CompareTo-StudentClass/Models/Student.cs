@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Override_Equals_GetHashCode_Clone_CompareTo_StudentClass.Models
 {
-    class Student
+    class Student : ICloneable, IComparable<Student>
     {
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
@@ -22,7 +22,7 @@ namespace Override_Equals_GetHashCode_Clone_CompareTo_StudentClass.Models
             this.FirstName = firstName;
             this.MiddleName = middleName;
             this.LastName = lastName;
-            this.SocialSecurityNumber = SocialSecurityNumber;
+            this.SocialSecurityNumber = socialSecurityNumber;
         }
 
         public override bool Equals(object obj) //*
@@ -53,6 +53,30 @@ namespace Override_Equals_GetHashCode_Clone_CompareTo_StudentClass.Models
             hashCode = hashCode * -1521134295 + this.SocialSecurityNumber.GetHashCode();
 
             return hashCode;
+        }
+
+        public object Clone()
+        {
+            //Shallow copy with MemberwiseClone().
+            //Work only for ValueTypes NOT for reference one!
+            var clonedStudent = this.MemberwiseClone() as Student;
+
+            //Deep copy.
+            //TRY THIS: Comment the code (in region) below and use GetHashCode() to compare two Student objects.
+            //In our class we have only primitive values (ValueTypes), so for that reason MemberwiseClone() is enough for now. 
+            #region DeepCopy
+            clonedStudent.FirstName = string.Copy(this.FirstName);
+            clonedStudent.MiddleName = string.Copy(this.MiddleName);
+            clonedStudent.LastName = string.Copy(this.LastName);
+            clonedStudent.SocialSecurityNumber = this.SocialSecurityNumber;
+            #endregion
+
+            return clonedStudent;
+        }
+
+        public int CompareTo(Student other)
+        {
+            throw new NotImplementedException();
         }
 
         public static bool operator ==(Student firstStudent, Student secondStudent) //**
