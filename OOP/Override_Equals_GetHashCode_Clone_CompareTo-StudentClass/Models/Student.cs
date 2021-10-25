@@ -25,6 +25,17 @@ namespace Override_Equals_GetHashCode_Clone_CompareTo_StudentClass.Models
             this.SocialSecurityNumber = socialSecurityNumber;
         }
 
+        public override string ToString()
+        {
+            var result = string.Empty;
+            var newLine = Environment.NewLine;
+
+            result += "Student name: " + this.FirstName + " " + this.MiddleName + " " + this.LastName + newLine;
+            result += "SocialSecurityNumber: " + this.SocialSecurityNumber + newLine;
+
+            return result;
+        }
+
         public override bool Equals(object obj) //*
         {
             var student = obj as Student;  //Using keyword "as" will try to cast object. If fail the object will be null. In this situation standard direct cast ((Student) obj) will throw an exception!
