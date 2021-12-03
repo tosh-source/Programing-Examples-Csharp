@@ -211,7 +211,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Override_Equals_GetHashCode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Override_Equals_GetHashCode(Struct_ValueTypeVsClassEquals)", "OOP\Override_Equals_GetHashCode(Struct_ValueTypeVsClassEquals)\Override_Equals_GetHashCode(Struct_ValueTypeVsClassEquals).csproj", "{E0BF4830-7785-4355-B5AA-225CEBCA5924}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput_Techniques_ConsoleFonts", "InputOutput_Techniques_ConsoleFonts\InputOutput_Techniques_ConsoleFonts.csproj", "{366469E5-1F1A-49F1-AFB1-2F6295B02EB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput_Techniques_ConsoleFontsAndCharsets", "InputOutput_Techniques_ConsoleFonts\InputOutput_Techniques_ConsoleFontsAndCharsets.csproj", "{366469E5-1F1A-49F1-AFB1-2F6295B02EB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
