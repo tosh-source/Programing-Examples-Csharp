@@ -6,19 +6,19 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace InputOutput_Techniques_ConsoleFonts
+namespace InputOutput_Techniques_ConsoleFontsAndCharsets
 {
-    class ConsoleFonts
+    class ConsoleFontsAndCharsets
     {
         static void Main(string[] args)
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-            //Use current font and try to print Cyrillic symbols. <--(will NOT work)
+            //Use current charset and try to print Cyrillic symbols. <--(will NOT work)
             Console.WriteLine(Console.OutputEncoding);
             Console.WriteLine("АБВГДЕЖЗ");
 
-            //Change font to UTF8 and print Cyrillic symbols.
+            //Change charset to UTF8 and print Cyrillic symbols.
             Console.OutputEncoding = Encoding.UTF8;
             Console.WriteLine(Console.OutputEncoding);
             Console.WriteLine("АБВГДЕЖЗ");
