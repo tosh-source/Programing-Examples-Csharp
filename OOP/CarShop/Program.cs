@@ -40,12 +40,12 @@ namespace CarShop
 			}
 		}
 
-		static void Print(string FirstName, string LastName, int Age, string CustomerCarModel)
+		static void Print(string firstName, string lastName, int age, string customerCarModel)
         {
-            Console.WriteLine(FirstName + " "
-                            + LastName
-                            + $", Age: {Age}"
-                            + $", Buy car: {CustomerCarModel}");
+            Console.WriteLine(firstName + " "
+                            + lastName
+                            + $", Age: {age}"
+                            + $", Buy car: {customerCarModel}");
         }
     }
 }
