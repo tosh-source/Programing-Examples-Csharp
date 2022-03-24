@@ -215,6 +215,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput_Techniques_Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionChaining", "ExceptionChaining\ExceptionChaining.csproj", "{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpressions_II", "RegularExpressions_II\RegularExpressions_II.csproj", "{9AFE535D-E57E-4A97-8AD7-04B78CE40A0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -633,6 +635,10 @@ Global
 		{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFE535D-E57E-4A97-8AD7-04B78CE40A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFE535D-E57E-4A97-8AD7-04B78CE40A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFE535D-E57E-4A97-8AD7-04B78CE40A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFE535D-E57E-4A97-8AD7-04B78CE40A0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
