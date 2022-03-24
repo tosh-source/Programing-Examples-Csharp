@@ -213,6 +213,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Override_Equals_GetHashCode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOutput_Techniques_ConsoleFontsAndCharsets", "InputOutput_Techniques_ConsoleFonts\InputOutput_Techniques_ConsoleFontsAndCharsets.csproj", "{366469E5-1F1A-49F1-AFB1-2F6295B02EB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionChaining", "ExceptionChaining\ExceptionChaining.csproj", "{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -627,6 +629,10 @@ Global
 		{366469E5-1F1A-49F1-AFB1-2F6295B02EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{366469E5-1F1A-49F1-AFB1-2F6295B02EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{366469E5-1F1A-49F1-AFB1-2F6295B02EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC7114B6-579E-4CD1-B6B6-5EF1E067160D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
