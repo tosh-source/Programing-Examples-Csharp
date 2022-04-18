@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{516D41A1-E148-45DF-937D-9650BE99D734}</ProjectGuid>
+    <ProjectGuid>{F1E35D8C-49FB-42EF-904E-E5419D5C933B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Func_T_</RootNamespace>
-    <AssemblyName>Func%28T%29</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Delegates_Action_T_</RootNamespace>
+    <AssemblyName>Delegates_Action%28T%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Action_T_.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
