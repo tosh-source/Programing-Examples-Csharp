@@ -11,7 +11,7 @@ namespace InputOutput_Techniques_Console_SetIn
     {
         static void Main(string[] args)
         {
-            //INFO: How to simulate the input data  //Как да симилиране на входните данни в цонзолата
+            //INFO: How to simulate the input data  //Как да симулиране на входните данни в цонзолата
             ////////////////////////////////////////////////////
             //ВАЖНО - Този метод симулира ВЕЧЕ въведени данни(от потребител) в конзолата.
             //БЕЛЕЖКА - Много подходящо за използване при тестове. Т.е., преди изпълнението на всеки друг 
@@ -32,3 +32,7 @@ namespace InputOutput_Techniques_Console_SetIn
         }
     }
 }
+
+//Using "Console.SetIn(reader)" and "Console.SetOut(writer)" -> https://learn.microsoft.com/en-us/dotnet/api/system.console.setin?view=net-7.0#system-console-setin(system-io-textreader)
+//How to use "Console.OpenStandardInput()" method -> https://learn.microsoft.com/en-us/dotnet/api/system.console.openstandardinput?view=net-7.0
+//More examples on "Stream_IO" and "Stream_IO_(ReadTextAsByte)".
