@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Func_T_
+namespace Delegates_Func_T_
 {
-    class Program
+    class Func_T_
     {
         static void Main(string[] args)
         {
+            //Simple using of predefined delegate "Func". 
             Func<int, bool> intFunc = (x) => x < 50;
             int[] values = { 45, 55, 20 };
 
@@ -27,3 +28,4 @@ namespace Func_T_
         }
     }
 }
+

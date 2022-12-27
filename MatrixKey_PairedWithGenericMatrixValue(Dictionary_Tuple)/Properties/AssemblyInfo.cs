@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Func(T)")]
+[assembly: AssemblyTitle("MatrixKey_PairedWithGenericMatrixValue(Dictionary_Tuple)")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Func(T)")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyProduct("MatrixKey_PairedWithGenericMatrixValue(Dictionary_Tuple)")]
+[assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("516d41a1-e148-45df-937d-9650be99d734")]
+[assembly: Guid("5facdd72-f6c1-44b4-9587-1443a659f0db")]
 
 // Version information for an assembly consists of the following four values:
 //

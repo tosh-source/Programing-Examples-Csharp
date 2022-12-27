@@ -13,6 +13,5 @@ class consoleAppExperiments
     static void Main()
     {
 
-
     }
 }

@@ -24,7 +24,7 @@ class Reflection
         {
             Console.WriteLine("Property Name: "
                                 + property.Name + ": "
-                                + property.GetValue(cat));
+                                + property.GetValue(cat));  //inspect current instance of object runtime
         }
 
         Console.WriteLine();

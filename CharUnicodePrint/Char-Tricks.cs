@@ -34,6 +34,12 @@ class CharTricks
         ///////////////////////////////////////
         Console.WriteLine(stringToInt + " " + stringToInt2 + "\n");
 
+        //IIa. Същия пример, но с произволно едноцифрено число.
+        string input = Console.ReadLine();
+        charToInt = input[0] - '0';
+        Console.WriteLine(@"input[0] - '0': " + charToInt);
+
+
         //III. Return bool values from "Char.Is..."  
         char charToTest = 'D';
         /////////////////////////////////////////////////
