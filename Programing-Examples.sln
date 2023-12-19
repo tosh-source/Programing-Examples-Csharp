@@ -221,6 +221,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates_Action(T)", "Dele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixKey_PairedWithGenericMatrixValue(Dictionary_Tuple)", "MatrixKey_PairedWithGenericMatrixValue(Dictionary_Tuple)\MatrixKey_PairedWithGenericMatrixValue(Dictionary_Tuple).csproj", "{5FACDD72-F6C1-44B4-9587-1443A659F0DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary_Print_Figure", "Dictionary_Print_Figure\Dictionary_Print_Figure.csproj", "{9899946C-3DDA-491D-BB21-42D62C399E51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -651,6 +653,10 @@ Global
 		{5FACDD72-F6C1-44B4-9587-1443A659F0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FACDD72-F6C1-44B4-9587-1443A659F0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FACDD72-F6C1-44B4-9587-1443A659F0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9899946C-3DDA-491D-BB21-42D62C399E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9899946C-3DDA-491D-BB21-42D62C399E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9899946C-3DDA-491D-BB21-42D62C399E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9899946C-3DDA-491D-BB21-42D62C399E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
