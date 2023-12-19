@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dictionary_Print_Figure
 {
-    class Program
+    class Dictionary_Print_Figure
     {
         static void Main(string[] args)
         {
