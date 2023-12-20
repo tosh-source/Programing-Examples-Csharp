@@ -56,3 +56,8 @@ class Stream_IO
 ///////////////////////////////////////
 // new FileInfo(@"C:Test\Test.txt"); //
 ///////////////////////////////////////
+
+
+
+//Using "StringWriter()" and "StreamReader()" with cooperation of StringBuilder() -> https://www.c-sharpcorner.com/UploadFile/mahesh/stringwriter-in-C-Sharp/
+//More examples and how to use Console.SetIn()", "Console.SetOut() and  "Console.OpenStandardInput()" method on "InputOutput-Techniques (Console.SetIn())".
