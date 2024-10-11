@@ -48,7 +48,7 @@ namespace Override_Equals_GetHashCode_Struct_ValueTypeVsClassEquals_
             }
             else
             {
-                Console.WriteLine("Reference and static methods Equals() can't compare this two equal objects!");
+                Console.WriteLine("Instance and static methods Equals() can't compare this two equal objects!");
             }
         }
     }
